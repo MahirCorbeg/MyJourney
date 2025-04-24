@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Journey Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 100px;
+    }
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #1f1f1f;
+    }
+    .navbar-brand span {
+      color: #f9a825;
+    }
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a1a, #292929);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #f9a825;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 20px auto 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span>MyJourney</span> Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#article">First Steps</a></li>
+        <li class="nav-item"><a class="nav-link" href="#shift">The Shift</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="container">
+    <h1>From Fixing PCs to Building Websites</h1>
+    <p>A journey of passion, learning, and growth — moving from hands-on tech repair to creating on the web.</p>
+  </div>
+</section>
+
+<!-- First Steps Section -->
+<section id="article" class="py-5" style="background-color: #1e1e1e;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-warning"><i class="bi bi-cpu-fill me-2"></i>My First Steps</h2>
+    <p class="lead">
+      I’ve been fascinated by tech since grade school. After 2012, it became more than interest — it became a craft.
+    </p>
+    <p>
+      I repaired laptops, cleaned dust out of CPU fans, replaced motherboards, and saved data from broken hard drives and USB sticks. I could diagnose issues blindfolded. I’ve spent years fixing what others thought was lost — and I loved every part of it.
+    </p>
+    <p>
+      From reinstalling Windows to soldering components, it shaped my mindset: be precise, be curious, and never quit. These skills laid the foundation for my next big leap — from repair to creation.
+    </p>
+  </div>
+</section>
+<!-- The Shift to Web Design Section -->
+<section id="shift" class="py-5" style="background-color: #292929;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-warning"><i class="bi bi-code-slash me-2"></i>The Shift to Web</h2>
+    <p class="lead">
+      After years of solving physical tech problems, I started exploring the digital world. I began learning web development using nothing more than my phone and the Acode app. Writing HTML and CSS lines on a small screen was not easy — but it was enough to spark something bigger.
+    </p>
+    <p>
+      Eventually, I moved to Visual Studio Code on desktop. My workflow became smoother, and I started building real websites. The first was a simple English learning page, then a personal portfolio, followed by more advanced projects like a welding business site and a historical tech timeline.
+    </p>
+    <p>
+      Each site helped me refine layout, color, responsiveness, and user experience. With JavaScript, I brought interactivity to my designs — menus that close automatically, smooth scrolling, dynamic elements. It wasn’t just about function anymore, it became about feeling.
+    </p>
+    <p>
+      Today, I use the same dedication and precision from my hardware days to craft clean, elegant, and purposeful websites. I still fix the occasional PC, but my main focus is now digital creation — with code that speaks for itself.
+    </p>
+  </div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-5" style="background-color: #1e1e1e;">
+  <div class="container">
+    <h2 class="text-center mb-4 text-warning"><i class="bi bi-person-circle me-2"></i>About Me</h2>
+    <p class="text-center">
+      I'm a self-taught web designer with a strong background in hardware and IT support. From repairing computers to building websites, my work blends precision and creativity.
+    </p>
+    <p class="text-center">
+      This blog is more than a story — it's proof that consistent effort, even from humble beginnings, leads to real progress. I'm passionate about helping others and sharing what I've learned.
+    </p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" style="background-color: #111;">
+  <div class="container text-center text-white">
+    <h2 class="mb-4"><i class="bi bi-envelope-fill me-2"></i>Contact</h2>
+    <p class="lead">Want to reach out or collaborate? Let’s talk!</p>
+    <p>Email: <a href="mailto:mahir.webdev@gmail.com" class="text-warning">mahir.webdev@gmail.com</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+  <p class="mb-0">© 2025 MyJourney Blog. All rights reserved.</p>
+</footer>
+
+<!-- Scroll to Top Button -->
+<a href="#hero" class="btn btn-warning scroll-top position-fixed" style="left: 20px;"><i class="bi bi-arrow-up"></i></a>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const OFFSET_Y = 80;
+  function scrollToTargetWithOffset(targetSelector) {
+    const element = document.querySelector(targetSelector);
+    if (!element) return;
+    const y = element.getBoundingClientRect().top + window.pageYOffset - OFFSET_Y;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('.nav-link[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = this.getAttribute('href');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
+      setTimeout(() => scrollToTargetWithOffset(target), 300);
+    });
+  });
+</script>
